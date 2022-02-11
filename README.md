@@ -1,2 +1,2 @@
 # Wordle
-My version of the game Wordle. No daily word limit like the original.
+My version of the game Wordl built with Node.js, Express, and Socket.io. It doesn't have a daily word limit like the original.
