@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Wordle</title>
+        <link href="styles/style.css" rel="stylesheet">
+        <style>@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;600&display=swap');</style>
+        <script src="https://kit.fontawesome.com/0108d763d4.js" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" href="#">
+    </head>
+
+    <body>
+        <meta name="viewport" content="width=device-width" />
+
+        <div id="main-wrapper">
+            
+            <div id="header-wrapper">
+                
+                <div id="buttons-left-wrapper">
+                    <button id="github" class="header-button" onclick="window.open('https://github.com/ericjiminy','_blank')"><i class="fa-brands fa-github"></i></button>
+                    <button id="settings" class="header-button"><i class="fa-solid fa-gear"></i></button>
+                </div>
+                
+                <div id="title-wrapper">
+                    <h1 id="title">WORDLE</h1>
+                </div>
+                
+                <div id="buttons-right-wrapper">
+                    <button id="stats" class="header-button"><i class="fa-solid fa-chart-column"></i></button>
+                    <button id="new-word" class="header-button"><i class="fa-solid fa-plus"></i></button>
+                </div>
+                
+            </div>
+
+            <div id="board-wrapper">
+
+                <table id="board-table">
+                    <tr id="board-line-1" class="board-line">
+                        <td class="board-cell"></td><td class="board-spacer"></td>
+                        <td class="board-cell"></td><td class="board-spacer"></td>
+                        <td class="board-cell"></td><td class="board-spacer"></td>
+                        <td class="board-cell"></td><td class="board-spacer"></td>
+                        <td class="board-cell"></td>
+                    </tr>
+                </table>
+                            
+            </div>
+
+            <div id="letters-wrapper">
+                
+                <div id="letters-row-1" class="letters-row"></div>
+                <div id="letters-row-2" class="letters-row"></div>
+                <div id="letters-row-3" class="letters-row"></div>
+            
+            </div>
+            
+        </div>
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="src/client.js"></script>
+    </body>
+</html>
