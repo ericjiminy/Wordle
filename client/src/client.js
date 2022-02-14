@@ -400,7 +400,8 @@ function endGame(winOrLose) {
 
     if (winOrLose == "lose") losses++;
     winPercent = (((gamesPlayed - (losses)) / gamesPlayed) * 100);
-    if (winPercent < 100) winPercent = winPercent.toFixed(1);
+    if (winPercent < 100) winPercent = Math.trunc(winPercent);
+    console.log(winPercent);
     browserData.setItem("winPercent", winPercent);
 
     if (winOrLose == "win") {
